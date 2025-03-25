@@ -57,14 +57,14 @@
     }
 
     .mobile-menu-btn {
-        display: none;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
     /* Responsive Design */
     @media (max-width: 768px) {
         .navbar-links {
@@ -258,7 +258,7 @@
         </div>
         
         <div class="form-section">
-            <h1>Income Certificate Form</h1>
+            <h1>Medical Claim Certificate Form</h1>
             <form id="residentCertForm">
                 <div class="form-group">
                     <label for="applicantName">Full Name of Applicant</label>
@@ -409,7 +409,7 @@
             doc.setFont("times", "normal");
             doc.setFontSize(12);
             
-            let mainText = `Certified that Sri/Smt./Km. ${formData.applicantName} ${prefix} ${formData.guardianName} of Village ${formData.village}, P.O. ${formData.postOffice}, P.S. - Chanditala, Dist. - Hooghly, is a permanent resident of this Gram Panchayat. ${pronoun} is personally known to me. ${pronoun} is unable to meet ${possessive.toLowerCase()} medical expense. Therefore, ${pronoun.toLowerCase} maybe given medical aids at free of cost. I wish ${possessive.toLowerCase()} early relief and cure.`;
+            let mainText = `Certified that Sri/Smt./Km. ${formData.applicantName} ${prefix} ${formData.guardianName} of Village ${formData.village}, P.O. ${formData.postOffice}, P.S. - Chanditala, Dist. - Hooghly, is a permanent resident of this Gram Panchayat. ${pronoun} is personally known to me. ${pronoun} is unable to meet ${possessive.toLowerCase()} medical expense. Therefore, ${possessive.toLowerCase} maybe given medical aids at free of cost. I wish ${possessive.toLowerCase()} early relief and cure.`;
             
             const lines = doc.splitTextToSize(mainText, 170);
             let y = 98;

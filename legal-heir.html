@@ -6,7 +6,9 @@
     <title>Legal Heir Certificate Form</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        .navbar {
+    
+
+    .navbar {
         background-color: #2c3e50;
         padding: 1rem 2rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -57,14 +59,20 @@
     }
 
     .mobile-menu-btn {
-        display: none;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
 
+   .mobile-menu-btn:hover {
+    background-color: transparent; /* Keep transparent background */
+    color: #3498db; /* Change to blue on hover, matching navbar link hover */
+    transform: none; /* Don't move the button */
+    box-shadow: none; /* No shadow */
+}
     /* Responsive Design */
     @media (max-width: 768px) {
         .navbar-links {
@@ -176,10 +184,10 @@
         }
 
         button:hover {
-            background-color: #45a049;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    background-color: #45a049; /* Keep a green shade for hover */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
         .heir {
             border: 2px solid #e2e8f0;
